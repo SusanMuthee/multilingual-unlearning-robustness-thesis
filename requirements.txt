@@ -1,0 +1,5 @@
+unsloth==2026.7.5
+datasets>=3.2.0
+lm-eval>=0.4.7
+protobuf>=5.29.3
+sacrebleu>=2.5.1
