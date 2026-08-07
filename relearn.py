@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import argparse
 import hashlib
 import json
@@ -25,7 +23,8 @@ def sha256(path: Path) -> str:
 
 def load_config(path: Path) -> dict:
     cfg = json.loads(path.read_text(encoding="utf-8"))
-    required = {"model", "revision", "corpus_zip", "condition", "seed", "max_length",
+    required = {"experiment_id", "family", "method", "model", "revision",
+                "corpus_zip", "condition", "seed", "max_length",
                 "epochs", "learning_rate", "micro_batch_size", "gradient_accumulation_steps",
                 "output_dir", "lora_rank", "lora_alpha", "lora_dropout", "target_modules"}
     missing = sorted(required - set(cfg))
