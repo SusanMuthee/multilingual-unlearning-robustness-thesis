@@ -1,0 +1,6 @@
+{
+  "tasks": "wmdp_bio,mmlu",
+  "batch_size": 4,
+  "num_fewshot": 5,
+  "max_length": 512
+}

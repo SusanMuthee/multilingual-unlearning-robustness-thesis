@@ -1,0 +1,70 @@
+{
+  "reference_implementations": {
+    "npo": {
+      "repository": "https://github.com/OPTML-Group/Unlearn-Simple",
+      "commit": "3083017cb317753725f35cc404c2d5aede1242ef",
+      "files": [
+        "references/original_implementations/unlearn_simple/WMDP/src/exec/unlearn_model.py",
+        "references/original_implementations/unlearn_simple/WMDP/src/model/unlearn.py",
+        "references/original_implementations/unlearn_simple/WMDP/src/unlearn/GA.py",
+        "references/original_implementations/unlearn_simple/WMDP/configs/unlearn/wmdp/NPO.json"
+      ]
+    },
+    "graddiff": {
+      "repository": "https://github.com/OPTML-Group/Unlearn-Simple",
+      "commit": "3083017cb317753725f35cc404c2d5aede1242ef",
+      "files": [
+        "references/original_implementations/unlearn_simple/WMDP/src/exec/unlearn_model.py",
+        "references/original_implementations/unlearn_simple/WMDP/src/model/unlearn.py",
+        "references/original_implementations/unlearn_simple/WMDP/src/unlearn/GA.py",
+        "references/original_implementations/unlearn_simple/WMDP/configs/unlearn/wmdp/GradDiff.json"
+      ]
+    },
+    "rmu": {
+      "repository": "https://github.com/centerforaisafety/wmdp",
+      "commit": "c0b6c12bb0de3decf9c13bb13f9f1aa15754a132",
+      "files": [
+        "references/original_implementations/wmdp_rmu/unlearn.py",
+        "references/original_implementations/wmdp_rmu/utils.py"
+      ]
+    }
+  },
+  "families": {
+    "zephyr": {
+      "base_model": "HuggingFaceH4/zephyr-7b-beta",
+      "base_revision": "892b3d7a7b1cf10c7a701c60881cd93df615734c",
+      "unlearned": {
+        "npo": {
+          "model": "OPTML-Group/NPO-WMDP",
+          "revision": "fec7960fb3925037a6befc5819036cbc55664b18"
+        },
+        "graddiff": {
+          "model": "OPTML-Group/GradDiff-WMDP",
+          "revision": "0695dccbb30a0986d20f211bc8bdea9d55ec5cc6"
+        },
+        "rmu": {
+          "model": "cais/Zephyr_RMU",
+          "revision": "70c55b3bf3141a8c24292dec0262b8aea03a0d4a"
+        }
+      }
+    },
+    "llama3": {
+      "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "base_revision": "8afb486c1db24fe5011ec46dfbe5b5dccdb575c2",
+      "unlearned": {
+        "npo": {
+          "model": "OPTML-Group/NPO-WMDP-llama3-8b-instruct",
+          "revision": "36565d9a751459e7aa6a843871732858195c13a5"
+        },
+        "graddiff": {
+          "model": "OPTML-Group/GradDiff-WMDP-llama3-8b-instruct",
+          "revision": "b50bc9baa7a82d9a0f064482cf35e3b3edcff7f5"
+        },
+        "rmu": {
+          "model": "LLM-GAT/llama-3-8b-instruct-rmu-checkpoint-6",
+          "revision": "859ebdb1f8608ec5d89f2f6096e3069aeafe627a"
+        }
+      }
+    }
+  }
+}

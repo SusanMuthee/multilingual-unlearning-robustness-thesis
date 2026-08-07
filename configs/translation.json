@@ -1,0 +1,15 @@
+{
+  "master_jsonl": "data/relearn.master.en.segmented.jsonl",
+  "output_dir": "data/translated",
+  "archive": "data/wmdp_parallel_relearning_v1.zip",
+  "model": "facebook/nllb-200-distilled-600M",
+  "revision": "f8d333a098d19b4fd9a8b18f94170487ad3f821d",
+  "languages": {
+    "en": "eng_Latn",
+    "es": "spa_Latn",
+    "ar": "arb_Arab",
+    "ja": "jpn_Jpan"
+  },
+  "max_length": 1024,
+  "num_beams": 1
+}

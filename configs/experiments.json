@@ -1,0 +1,7 @@
+{
+  "name": "multilingual_relearning_experiments",
+  "corpus_zip": "/workspace/input/wmdp_parallel_relearning_v1.zip",
+  "results_dir": "/workspace/results/unsloth_lora_study",
+  "seed": 42,
+  "languages": ["en", "es", "ar", "ja"]
+}

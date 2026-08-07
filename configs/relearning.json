@@ -1,0 +1,17 @@
+{
+  "max_length": 512,
+  "epochs": 1,
+  "learning_rate": 0.0002,
+  "warmup_ratio": 0.05,
+  "weight_decay": 0.01,
+  "micro_batch_size": 1,
+  "gradient_accumulation_steps": 4,
+  "validation_fraction": 0.2,
+  "lora_rank": 64,
+  "lora_alpha": 64,
+  "lora_dropout": 0.1,
+  "target_modules": [
+    "q_proj", "k_proj", "v_proj", "o_proj",
+    "gate_proj", "up_proj", "down_proj"
+  ]
+}
