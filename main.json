@@ -1,6 +1,0 @@
-{
-  "corpus_zip": "/workspace/input/experiments.zip",
-  "results_dir": "/workspace/results",
-  "seed": 42,
-  "languages": ["en", "es", "ar", "ja"]
-}
